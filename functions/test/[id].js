@@ -1,3 +1,3 @@
-export const onRequest = (id) => {
-    return new Response(id);
+export const onRequest = (context) => {
+    return new Response(context.request);
 }
